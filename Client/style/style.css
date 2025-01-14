@@ -1,0 +1,58 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* Particle background */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 70vh; /* Set the height to 70% of the viewport */
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the particles behind other content */
+}
+
+/* Content on top of the particles */
+.content {
+  position: relative;
+  z-index: 1; /* Ensure the content appears in front */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 70vh; /* Ensure the content starts after the particles (70% of the viewport height) */
+}
+
+.navbar {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(22, 22, 26, 0.18);
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+.btn-outline-dark {
+  border-radius: 0;
+}
+.btn-outline-dark:focus {
+  box-shadow: none;
+}
+@media screen and (max-width: 768px) {
+  .btn-outline-dark {
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+
+  .btn-outline-dark:hover {
+    background: none;
+    color: gray;
+  }
+}
